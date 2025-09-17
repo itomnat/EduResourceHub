@@ -1,0 +1,124 @@
+:root {
+    --oxford-blue: #14213D;
+    --gold-accent: #FCA311;
+    --light-gray: #E5E5E5;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.bg-oxford {
+    background-color: var(--oxford-blue) !important;
+    color: var(--white);
+}
+
+.bg-gray {
+    background-color: var(--light-gray) !important;
+}
+
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.bg-gold {
+    background-color: var(--gold-accent) !important;
+}
+
+.navbar-light.bg-gold .navbar-brand,
+.navbar-light.bg-gold .nav-link {
+    color: var(--oxford-blue) !important;
+}
+
+.navbar-light.bg-gold .nav-link:hover {
+    color: #e59400 !important;
+}
+
+.btn-gold {
+    background-color: var(--gold-accent);
+    border-color: var(--gold-accent);
+    color: var(--oxford-blue);
+}
+
+.btn-gold:hover {
+    background-color: #e59400;
+    border-color: #e59400;
+    color: var(--oxford-blue);
+}
+
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    padding: 1.25rem; /* Tighter than default */
+}
+
+h1, h2, h3, h5 {
+    color: var(--oxford-blue);
+    font-weight: 600;
+}
+
+.bg-oxford h1,
+.bg-oxford h2,
+.bg-oxford h3,
+.bg-oxford h5 {
+    color: var(--white) !important;
+}
+
+.lead {
+    color: #4a5568;
+    font-weight: 400;
+}
+
+.bg-oxford .lead {
+    color: var(--white) !important;
+}
+
+section {
+    padding-top: 70px; /* Fixed navbar offset */
+    padding-bottom: 2rem; /* Tighter */
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social-icons a:hover {
+    color: var(--gold-accent) !important;
+}
+
+.hero-custom {
+    min-height: 80vh;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 1.5rem;
+    }
+    
+    .display-3 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .mb-3, .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-custom {
+        min-height: 70vh;
+    }
+}
